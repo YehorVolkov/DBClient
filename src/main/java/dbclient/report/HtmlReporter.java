@@ -40,7 +40,7 @@ public class HtmlReporter implements ReportCreator {
             while(resultSet.next()) {
                 bw.write("<tr>");
                 for (int i = 1; i <= columnsNumber; i++) {
-                    bw.write("<td><left>" + resultSet.getString(i) + "</left></td>");
+                    bw.write("<td><left>" + resultSet.getString(rsmd.getColumnName(i)) + "</left></td>");
                 }
                 bw.write("</tr>");
             }
