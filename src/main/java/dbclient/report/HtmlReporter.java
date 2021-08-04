@@ -13,7 +13,7 @@ import java.sql.SQLException;
 public class HtmlReporter implements ReportCreator {
 
     private BufferedWriter bw;
-    Configuration configuration;
+    private final Configuration configuration;
 
     public HtmlReporter(Configuration configuration) {
         this.configuration = configuration;
